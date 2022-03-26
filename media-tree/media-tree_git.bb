@@ -32,6 +32,7 @@ SRC_URI = "git://git.linuxtv.org/media_build.git;protocol=https;branch=master;na
            git://github.com/BlackHole-Devel/media_tree.git;protocol=https;branch=master;name=linux;destsuffix=git/media \
            file://fix-strip.patch;patch=1 \
            file://use_system_lsdiff.patch;patch=1 \
+           file://temporary_comment_out_backports.patch;patch=1 \
            file://defconfig \
 "
 

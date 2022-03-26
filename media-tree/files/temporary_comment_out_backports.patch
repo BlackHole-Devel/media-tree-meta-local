@@ -1,0 +1,31 @@
+diff --git a/backports/backports.txt b/backports/backports.txt
+index 14f4975..c01ee57 100644
+--- a/backports/backports.txt
++++ b/backports/backports.txt
+@@ -109,7 +109,7 @@ add v4.9_dvb_net_max_mtu.patch
+ add v4.9_probe_new.patch
+ 
+ [4.8.255]
+-add v4.8_user_pages_flag.patch
++#add v4.8_user_pages_flag.patch
+ add v4.8_em28xx_bitfield.patch
+ add v4.8_dma_map_resource.patch
+ add v4.8_drm_crtc.patch
+@@ -125,7 +125,7 @@ add v4.6_i2c_mux.patch
+ 
+ [4.5.255]
+ add v4.5_gpiochip_data_pointer.patch
+-add v4.5_get_user_pages.patch
++#add v4.5_get_user_pages.patch
+ add v4.5_uvc_super_plus.patch
+ add v4.5_copy_to_user_warning.patch
+ add v4.5_vb2_cpu_access.patch
+@@ -153,7 +153,7 @@ add v4.0_fwnode.patch
+ add v4.0_async.patch
+ 
+ [3.19.255]
+-add v3.19_get_user_pages_unlocked.patch
++#add v3.19_get_user_pages_unlocked.patch
+ add v3.19_get_user_pages_locked.patch
+ 
+ [3.18.255]
