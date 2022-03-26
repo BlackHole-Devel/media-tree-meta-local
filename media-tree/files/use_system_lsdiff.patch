@@ -1,0 +1,26 @@
+diff --git a/linux/Makefile b/linux/Makefile
+index ebf04d7..563d1aa 100644
+--- a/linux/Makefile
++++ b/linux/Makefile
+@@ -117,7 +117,7 @@ clean:
+ 	-rm -rf $(MAINDIRS) mm .patches_applied .linked_dir .git_log.md5 git_log kernel_version.h
+ 
+ dir: clean
+-	@lsdiff --version >/dev/null # Make 'make dir' fail if lsdiff is not installed
++	@/usr/bin/lsdiff --version >/dev/null # Make 'make dir' fail if lsdiff is not installed
+ 	@if [ "$(DIR)" = "" ]; then echo "make $@ DIR=<version>"; exit -1; fi
+ 	@if [ ! -f "$(DIR)/include/uapi/linux/videodev2.h" ]; then echo "$(DIR) does not contain kernel sources"; exit -1; fi
+ 	@echo "Searching in $(DIR)/Makefile for kernel version."
+diff --git a/linux/use_dir.pl b/linux/use_dir.pl
+index b461ec5..5104e8d 100755
+--- a/linux/use_dir.pl
++++ b/linux/use_dir.pl
+@@ -178,7 +178,7 @@ sub get_patched_files()
+ 
+ 		if (m/(.*)\n/) {
+ 			print ("Backport ../backports/$1 touch(es) file(s):\n") if ($debug);
+-			open IN2, "lsdiff -h --strip 1 ../backports/$1 |";
++			open IN2, "/usr/bin/lsdiff -h --strip 1 ../backports/$1 |";
+ 			while (<IN2>) {
+ 				my $f = $_;
+ 				$f =~ s/\n//;
