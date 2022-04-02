@@ -1,14 +1,14 @@
-From 744755602523d956e4c28241f52ef20def08d646 Mon Sep 17 00:00:00 2001
+From 14df17fbe76d5bb7a565f7fb226dc9342b73c6a8 Mon Sep 17 00:00:00 2001
 From: dpeddi <1086815+dpeddi@users.noreply.github.com>
 Date: Sat, 2 Apr 2022 15:33:21 +0000
 Subject: [PATCH 5/5] temporary comment out few bpo
 
 ---
- backports/backports.txt | 6 +++---
- 1 file changed, 3 insertions(+), 3 deletions(-)
+ backports/backports.txt | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/backports/backports.txt b/backports/backports.txt
-index 9a1694e..4531ebe 100644
+index 9a1694e..88bb42f 100644
 --- a/backports/backports.txt
 +++ b/backports/backports.txt
 @@ -109,7 +109,7 @@ add v4.9_dvb_net_max_mtu.patch
@@ -20,7 +20,7 @@ index 9a1694e..4531ebe 100644
  add v4.8_em28xx_bitfield.patch
  add v4.8_dma_map_resource.patch
  add v4.8_drm_crtc.patch
-@@ -125,7 +125,7 @@ add v4.6_i2c_mux.patch
+@@ -125,14 +125,14 @@ add v4.6_i2c_mux.patch
  
  [4.5.255]
  add v4.5_gpiochip_data_pointer.patch
@@ -29,6 +29,14 @@ index 9a1694e..4531ebe 100644
  add v4.5_uvc_super_plus.patch
  add v4.5_copy_to_user_warning.patch
  add v4.5_vb2_cpu_access.patch
+ 
+ [4.4.255]
+ add v4.4_gpio_chip_parent.patch
+-add v4.4_user_pages_flag.patch
++#add v4.4_user_pages_flag.patch
+ 
+ [4.3.255]
+ delete v4.4_user_pages_flag.patch
 @@ -154,7 +154,7 @@ add v4.0_fwnode.patch
  add v4.0_async.patch
  
