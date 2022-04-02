@@ -34,6 +34,7 @@ SRC_URI = "git://git.linuxtv.org/media_build.git;protocol=https;branch=master;na
            file://fix-strip.patch;patch=1 \
            file://use_system_lsdiff.patch;patch=1 \
            file://media-build-fix.patch;patch=1 \
+           file;//add_regmap_write_bits.patch;patch=1 \
            file://temporary_comment_out_backports.patch;patch=1 \
            file://defconfig \
 "
