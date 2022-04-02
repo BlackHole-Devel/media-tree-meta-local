@@ -31,11 +31,11 @@ SRCREV_FORMAT = "linux"
 #git://git.linuxtv.org/media_tree.git;protocol=https;branch=master;name=linux;destsuffix=git/media
 SRC_URI = "git://git.linuxtv.org/media_build.git;protocol=https;branch=master;name=mediabuild \
            git://github.com/BlackHole-Devel/media_tree.git;protocol=https;branch=master;name=linux;destsuffix=git/media \
-           file://fix-strip.patch;patch=1 \
-           file://use_system_lsdiff.patch;patch=1 \
-           file://media-build-fix.patch;patch=1 \
-           file;//add_regmap_write_bits.patch;patch=1 \
-           file://temporary_comment_out_backports.patch;patch=1 \
+           file://0001-make_makefile.pl-use-CROSS_COMPILE-strip.patch;patch=1 \
+           file://0002-use-system-lsdiff.patch;patch=1 \
+           file://0003-fix-media-build.patch;patch=1 \
+           file://0004-add-v4.3_regmap_write_bits.patch;patch=1 \
+           file://0005-temporary-comment-out-few-bpo.patch;patch=1 \
            file://defconfig \
 "
 
