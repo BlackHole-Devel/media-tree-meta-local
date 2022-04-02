@@ -14,6 +14,7 @@ SRCREV_mediabuild = "ef54f05ca46befdef5b9159c7e56066f12dc015a"
 
 #SRCREV_linux = "${AUTOREV}"
 SRCREV_linux = "2c9541720c66899adf6f3600984cf3ef151295ad"
+#SRCREV_linux = "04769cb1c45a919cd94b931e6494d2a9afc32914"
 SRCREV_FORMAT = "linux"
 
 #SRCREV_qtwebflix = "${AUTOREV}"
@@ -32,6 +33,7 @@ SRC_URI = "git://git.linuxtv.org/media_build.git;protocol=https;branch=master;na
            git://github.com/BlackHole-Devel/media_tree.git;protocol=https;branch=master;name=linux;destsuffix=git/media \
            file://fix-strip.patch;patch=1 \
            file://use_system_lsdiff.patch;patch=1 \
+           file://media-build-fix.patch;patch=1 \
            file://temporary_comment_out_backports.patch;patch=1 \
            file://defconfig \
 "
