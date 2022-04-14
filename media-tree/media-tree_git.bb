@@ -46,8 +46,6 @@ SRC_URI[sha256sum] = "d1ea0113abcaa711d635727d32a2ca4b9dc5980313180528fd22ec8eda
 #SRCREV_FORMAT = "linux"
 #SRC_URI = "git://github.com/BlackHole-Devel/media_build.git;protocol=https;branch=master-oea-new;name=mediabuild \
 #           git://github.com/BlackHole-Devel/media_tree.git;protocol=https;branch=master;name=linux;destsuffix=git/media \
-#           http://linuxtv.org/downloads/drivers/linux-media-${SRC_DATE}-${SRC_SHA}.tar.bz2.md5 \
-#           http://linuxtv.org/downloads/drivers/linux-media-${SRC_DATE}-${SRC_SHA}.tar.bz2 \
 #           file://defconfig \
 #"
 
